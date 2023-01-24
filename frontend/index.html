@@ -17,7 +17,7 @@
         function callWeather (){
             fetch('http://localhost:1235/weatherforecast')
             .then((response) => response.json())
-            .then((data) => content.innerHTML = data);
+            .then((data) => content.innerHTML = JSON.stringify(data));
         }
     </script>
   </body>
